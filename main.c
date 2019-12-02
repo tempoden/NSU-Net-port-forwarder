@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
 
 	// C-style OOP
 	forwarder_t* forwarder = init(lport, argv[2], rport);
-	
+	// Handle errors and do cleanup
 	if (run(forwarder)) {
 		destroy(forwarder->connections);
 		close(forwarder->serverfd);
