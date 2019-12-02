@@ -85,7 +85,7 @@ void remove_connection(connection_list_t* to_remove) {
 }
 
 void destroy(connection_list_t* head) {
-	printf("DESTUCTION\n");
+	printf("DESTRUCTION\n");
 	if (head == NULL) {
 		return;
 	}
